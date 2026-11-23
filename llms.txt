@@ -1,0 +1,93 @@
+# MindShield
+
+> Take back your time. Build a better you.
+> استعد وقتك. وابنِ نسخة أفضل منك.
+
+MindShield is an Android screen-time and focus app published by the SmartTeam team. It places a short, deliberate pause before a distracting app opens, then turns the reclaimed time into goals, tasks, habits, and focus sessions. The app is free, has no ads and no in-app purchases, and works offline without an account.
+
+## Canonical
+
+- Arabic (default): https://mindshield.smart.sd/
+- English: https://mindshield.smart.sd/en/
+- Privacy policy: https://mindshield.smart.sd/privacy/ · https://mindshield.smart.sd/en/privacy/
+- Terms of use: https://mindshield.smart.sd/terms/ · https://mindshield.smart.sd/en/terms/
+- Account deletion: https://mindshield.smart.sd/delete-account/ · https://mindshield.smart.sd/en/delete-account/
+- Contact: info@smart.sd
+
+## Key facts
+
+| Item | Value |
+|---|---|
+| Product | MindShield |
+| Platform | Android 8.0 and later |
+| Price | Free |
+| Ads | None |
+| In-app purchases | None |
+| Account | Optional |
+| Offline use | Yes, for core features |
+| Languages | Arabic and English, full RTL and LTR |
+| Current version | 0.1.0 |
+
+## What it does
+
+1. **The pause.** When a tracked distracting app comes to the foreground, MindShield shows a calm pause over it. The user can return to a goal, start a focus session, or continue on purpose.
+2. **Cleanup.** Review the apps Android makes visible and choose keep, reduce, block, or remove. Removal opens Android's official dialog; MindShield never deletes an app silently.
+3. **Focus.** Start a 15, 25, 45, or 60-minute session, optionally linked to a goal. The session persists with AlarmManager and a notification instead of a foreground service.
+4. **Growth.** Goals, tasks, habits, a weekly report, and an optional learning plan turn reclaimed time into visible progress.
+
+Most screen time is not chosen; it happens. MindShield places a short pause between you and the app you chose to use less, then helps you fill the gap with something worth keeping.
+
+## Privacy boundaries
+
+- The installed-app list, per-app usage, block rules, goals, tasks, habits, focus sessions, and settings stay on the device by default.
+- An account is optional. Sync is off by default.
+- The optional accessibility service reads only `TYPE_WINDOW_STATE_CHANGED` package identifiers. It cannot retrieve window content. No text, passwords, keystrokes, or screenshots.
+- The app-inventory upload is optional, requires an in-app disclosure, only runs while a server flag allows it, goes only to the user's own rows, and can be stopped in Settings. It is not sent to analytics, crash reporting, or AI requests.
+- No advertising identifier, location, contacts, files, messages, screen content, or clipboard data is collected.
+- Crashlytics receives crash diagnostics and Firebase Analytics receives aggregated feature counts. Neither receives package names, app labels, or per-app durations.
+- The website is static. It sets no tracking cookies and runs no analytics. It fetches the current store links from a Supabase endpoint and serves fonts and images locally.
+
+## What MindShield does not claim
+
+- The default inventory scope is targeted, not a full device scan. When Android hides apps, the app reports a partial review.
+- Learning plans are assistive suggestions, not medical, financial, legal, or professional advice.
+- Store links are shown as available only when an administrator has published a live HTTPS listing. Until then the site says "coming soon" rather than inventing a link.
+
+## Pages
+
+- [Arabic home](https://mindshield.smart.sd/): MindShield تطبيق أندرويد هادئ يحوّل لحظة الاندفاع نحو تطبيق مشتّت إلى وقفة واعية، ثم إلى هدف ومهمة وعادة وجلسة تركيز. بلا إعلانات، وبلا ضجيج.
+- [English home](https://mindshield.smart.sd/en/): MindShield is a calm Android app that turns the urge to open a distracting app into a deliberate pause, then into a goal, a task, a habit, or a focus session. No ads. No noise.
+- [Privacy policy (Arabic)](https://mindshield.smart.sd/privacy/): what stays on the device, what leaves with permission, and what is never collected.
+- [Privacy policy (English)](https://mindshield.smart.sd/en/privacy/): the same policy in English.
+- [Terms of use](https://mindshield.smart.sd/terms/): accounts, acceptable use, content, availability, liability, and governing law.
+- [Terms of use (English)](https://mindshield.smart.sd/en/terms/): the English terms.
+- [Delete your account](https://mindshield.smart.sd/delete-account/): in-app steps, what is deleted, what remains, and support.
+- [Delete your account (English)](https://mindshield.smart.sd/en/delete-account/): the English instructions.
+
+## Frequently asked
+
+### Is MindShield free?
+Yes. No ads, no in-app purchases.
+
+### Do I need an account?
+No. Core features work offline without an account. An account is optional for sync and for the disclosed app-list upload.
+
+### Does MindShield read my screen?
+No. The accessibility service detects only the foreground app's package identifier and declares `canRetrieveWindowContent="false"`.
+
+### Does it see every installed app?
+Not always. The default mode is targeted and sees what Android exposes. A partial review is labelled as partial.
+
+### Where does my data go?
+It stays on the device by default. Optional sync and the disclosed app-inventory upload go to the user's own Supabase rows. Analytics and crash reports carry diagnostics and aggregated counts only.
+
+### Does it work on iPhone or Huawei?
+The current release targets Android 8.0 and later. App Store and Huawei AppGallery links appear on the site only when those listings are live.
+
+## Footer credit
+
+صمم وطور بواسطة SmartTeam  - www.smart.sd
+
+## Last updated
+
+2026-11-23

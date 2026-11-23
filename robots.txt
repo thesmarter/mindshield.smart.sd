@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# No tracking, no crawl-delay games: this site is static and public.
+Sitemap: https://mindshield.smart.sd/sitemap.xml
